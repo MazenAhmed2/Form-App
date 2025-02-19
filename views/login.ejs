@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css"></link>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <div>
+                <input id="showPassword" type="checkbox">
+                <label for="showPassword">Show Password</label>
+            </div>
+            <input type="submit" value="SIGN IN">
+        </form>
+        <div class='response success' style='display: none;'>
+            <i>X</i><span>Logged In Successfully</span>
+        </div>
+        <div class='response failed' style='display: none;'>
+            <i>X</i><span>There is thing wrong in email or password</span>
+        </div>
+        <p>Forget <a>Username</a> / <a>Password</a> ?</p>
+        <p>Don't have an account? <a href='/register'> Register</a></p>
+        
+    </div>
+    
+</body>
+<script src="./js/login.js"></script>
+
+</html>
